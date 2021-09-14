@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-plugin-contact-page1",
-    "name": "NodeBB Plugin Contact page1",
-    "url": "https://github.com/LEVI770770/nodebb-plugin-contact-page1",
+    "id": "nodebb-plugin-Hebrew-contact",
+    "name": "nodebb-plugin-Hebrew-contact",
+    "url": "https://github.com/LEVI770770/nodebb-plugin-Hebrew-contact",
     "library": "./library.js",
     "templates": "./static/templates",
     "scripts": [
