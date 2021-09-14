@@ -1,5 +1,5 @@
 {
-    "name": "nodebb-plugin-contact-page770",
+    "name": "nodebb-plugin-Hebrew-contact",
     "version": "1.1.2",
     "description": "A nodeBB plugin to a contact page",
     "main": "library.js",
@@ -13,9 +13,9 @@
     "author": "robin4002",
     "license": "BSD-2-Clause",
     "bugs": {
-        "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page/issues"
+        "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-Hebrew-contact/issues"
     },
-    "homepage": "https://github.com/MinecraftForgeFrance/nodebb-plugin-contact-page#readme",
+    "homepage": "https://github.com/MinecraftForgeFrance/nodebb-plugin-Hebrew-contact#readme",
     "dependencies": {
         "simple-recaptcha-new": "^1.1.1"
     },
