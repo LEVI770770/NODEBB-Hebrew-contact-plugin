@@ -1,32 +1,24 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
-	"library": "./library.js",
-	"hooks": [
-		{
-			"hook": "static:app.load", "method": "init"
-		},
-		{
-			"hook": "static:api.routes", "method": "addRoutes"
-		},
-		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
-		}
+    "id": "nodebb-plugin-contact-page1",
+    "name": "NodeBB Plugin Contact page1",
+    "url": "https://github.com/LEVI770770/nodebb-plugin-contact-page1",
+    "library": "./library.js",
+    "templates": "./static/templates",
+    "scripts": [
+		"static/js/contact.js"
 	],
-	"staticDirs": {
-		"static": "./static"
-	},
-	"less": [
+    "acpScripts": [
+        "static/js/admin.js"
+    ],
+    "less": [
 		"static/style.less"
 	],
-	"scripts": [
-		"static/lib/main.js"
-	],
-	"acpScripts": [
-		"static/lib/admin.js"
-	],
-	"modules": {
-		"../client/quickstart.js": "./static/lib/quickstart.js"
-	},
-	"templates": "static/templates"
+    "hooks": [
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:admin.header.build", "method": "addToAdminNav" },
+        { "hook": "filter:config.get", "method": "getConfig" },
+        { "hook": "filter:email.modify", "method": "modifyEmail"}
+    ],
+    "languages": "languages",
+    "defaultLang": "en_GB"
 }
